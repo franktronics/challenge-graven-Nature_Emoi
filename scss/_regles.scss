@@ -1,0 +1,104 @@
+$max-width: 1200px;
+$default_font_size: 16;      /*valeur de la police par default*/
+@function size ($size){      /*function de convertion en rem*/
+    @return ($size / $default_font_size) * 1rem;
+}
+%width-container{
+    margin-left: calc((100% - #{$max-width}) / 2);
+    margin-right: calc((100% - #{$max-width}) / 2);
+
+    @media all and (max-width: 1200px){
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Tahoma;
+}
+body, html{
+    scroll-behavior: smooth;
+    height: 100%;
+    font-size: $default_font_size * 1px;
+}
+
+p,a{
+    font-size: size(18);
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/*styles des titres*/
+.textbold{
+    color: #000;
+    font-family: 'Abril Fatface';
+    font-size: size(40);
+    position: relative;
+
+    &::after{
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 8px;
+        position: absolute;
+        background: #ADD981;
+        top: 100%;
+        left: 0;
+    }
+}
+/********/
+
+
+/*regles pour les cards*/
+
+.card{
+    width: 300px;  
+    height: 450px;
+    position: relative;
+    background: url(../img/mventes/1.jpg);
+    background-size: cover;
+
+    // img{
+    //     width: 100%;
+    //     height: 100%;
+    // }
+    .cardblock{
+        background: #FFFFFFDF;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        overflow: hidden;
+        padding: 15px 20px 0 20px;
+        transition: height ease-in-out .3s;
+    }
+    .cardblock div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-price{
+        color: #ADD981;
+        font-size: size(14);
+    }
+    .savoirplus{
+        text-align: center;
+        padding-top: 40px;
+        opacity: 0;
+        transition: opacity ease-in-out .3s, transform ease-in-out .3s .2s;
+    }
+    &:hover{
+        .cardblock{
+            height: 60%;
+        }
+    }
+    &:hover .savoirplus{
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+/*regles pour les cards*/

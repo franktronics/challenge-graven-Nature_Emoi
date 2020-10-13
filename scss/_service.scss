@@ -1,0 +1,39 @@
+@import "regles.scss";
+
+#service{
+    @extend %width-container;
+    padding: 70px 130px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1200px){
+        padding: 70px 20px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+.service__icon{
+    color: #ADD981;
+    font-size: 50px;
+}
+@media (max-width: 700px){
+    #service{
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            margin-bottom: 30px;
+        }
+        .service__icon{
+            font-size: 60px;
+        }
+    }
+}

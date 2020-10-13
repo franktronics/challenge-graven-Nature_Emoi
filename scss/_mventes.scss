@@ -1,0 +1,8 @@
+@import "regles.scss";
+
+#mventes{
+    @extend %width-container;
+}
+.bloccard{
+    //display: flex;
+}

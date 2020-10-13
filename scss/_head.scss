@@ -1,0 +1,165 @@
+@import "regles.scss";
+
+.header{
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    height: 100%;
+    position: relative;
+
+    a, p{
+        color: #fff;
+    }
+}
+.burger{
+    display: none;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+
+ 
+    .logo img{
+        width: size(170);
+    }
+    .nav-lien a{
+        margin-left: 65px;
+    }
+}
+.titre{
+    font-size: size(75);
+    font-family: 'Abril Fatface';
+    margin: 50px 0 60px 110px;
+}
+.scroll{
+    margin-left: 110px;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+
+    p{
+        font-size: size(16);
+    }
+    .scroll-icon{
+        color: #fff;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+}
+/*media*/
+
+@media all and (max-width : 840px){
+
+    @keyframes anim-nav-query{
+        0% {
+            transform: translateY(-200px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .nav-lien{
+        display: none;
+    }
+    /*query-nav pour le nouveau menu de navigation*/
+    .query-nav{
+        padding-bottom: 10px;
+        display: inline-block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 0;
+        animation: anim-nav-query .3s ease-in-out ;
+        
+        a{
+            color: #000;
+            font-size: size(30);
+            margin: 14px 0 8px 20px;
+        }
+    }
+    .navbar{
+        justify-content: space-between;
+
+        .nav-lien a{
+            margin-left: 20px;
+        }
+    }
+    #burger-container{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+    .burger{
+        display: inline-block;
+        width: 40px;
+        height: 4px;
+        background: #fff;  
+        position: relative;
+        z-index: 20;
+
+        &::before, &::after{
+            content: '';
+            display: inline-block;
+            background: #fff;
+            width: 40px;
+            height: 4px;
+            position: absolute;
+            transform-origin: left;
+            transition: transform ease-in-out .3s, background ease-in-out .4s;
+        }
+        
+        &::before{
+            top: -14px;
+        }
+        &::after{
+            bottom: -14px;
+        }
+    }
+    .burger-active{
+        background: transparent;
+        transition: background ease-in-out .3s;
+
+        &::before{
+            transform: rotateZ(45deg);
+            background: #000;
+        }
+        &::after{
+            transform: rotateZ(-45deg);
+            background: #000;
+        }
+    }
+}
+@media all and (max-width: 700px){
+    .titre{
+        font-size: size(50);
+        margin: 80px 0 60px 40px;
+    }
+    .scroll{
+        margin-left: 40px;
+    }
+    .navbar{
+        padding: 15px 20px 40px 10px;
+    }
+    .navbar .logo img{
+        width: size(130);
+    }
+}
+@media only screen and (max-height: 500px){
+    .titre{
+        font-size: size(40);
+        margin: 40px 0 0 80px;
+    }
+    .navbar{
+        padding-top: 20px;
+    }
+    .scroll{
+        margin-left: calc(100% - 100px);
+    }
+}
