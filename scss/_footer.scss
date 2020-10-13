@@ -1,0 +1,5 @@
+@import "regles.scss";
+
+#footer{
+    @extend %width-container;
+}

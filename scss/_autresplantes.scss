@@ -1,1 +1,42 @@
-@import "regles.scss"
+@import "regles.scss";
+
+#autresplantes{
+    @extend %width-container;
+    display: flex;
+}
+#autresplantes>article{
+    height: 600px;
+}
+#autresplantes>article:nth-child(1){
+    background: url(../img/autresplantes/1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+#autresplantes>article:nth-child(2){
+    background: url(../img/autresplantes/2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    margin: 0 20px;
+}
+#autresplantes>article:nth-child(3){
+    background: url(../img/autresplantes/3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 25%;
+}
+@media (max-width: 800px){
+    #autresplantes{
+        flex-direction: column;
+        align-items: center;
+    }
+    #autresplantes>article:nth-child(1), 
+    #autresplantes>article:nth-child(2), 
+    #autresplantes>article:nth-child(3){
+        margin: 0 0 20px 0;
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+    }
+}

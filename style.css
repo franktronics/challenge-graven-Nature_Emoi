@@ -1,10 +1,10 @@
 /*valeur de la police par default*/
-#nosplantes, #mventes, #service {
+#autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #nosplantes, #mventes, #service {
+  #autresplantes, #nosplantes, #mventes, #service {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -261,12 +261,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#nosplantes, #mventes, #service {
+#autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #nosplantes, #mventes, #service {
+  #autresplantes, #nosplantes, #mventes, #service {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -394,12 +394,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#nosplantes, #mventes, #service {
+#autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #nosplantes, #mventes, #service {
+  #autresplantes, #nosplantes, #mventes, #service {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -534,12 +534,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#nosplantes, #service, #mventes {
+#autresplantes, #nosplantes, #service, #mventes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #nosplantes, #service, #mventes {
+  #autresplantes, #nosplantes, #service, #mventes {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -629,6 +629,10 @@ ul {
 }
 
 /*regles pour les cards*/
+#nosplantes {
+  padding-bottom: 20px;
+}
+
 .nosplantes-card-container > article {
   width: 100%;
   height: 100%;
@@ -689,12 +693,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#service, #mventes, #nosplantes {
+#autresplantes, #service, #mventes, #nosplantes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #service, #mventes, #nosplantes {
+  #autresplantes, #service, #mventes, #nosplantes {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -784,3 +788,48 @@ ul {
 }
 
 /*regles pour les cards*/
+#autresplantes {
+  display: flex;
+}
+
+#autresplantes > article {
+  height: 600px;
+}
+
+#autresplantes > article:nth-child(1) {
+  background: url(../img/autresplantes/1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+}
+
+#autresplantes > article:nth-child(2) {
+  background: url(../img/autresplantes/2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  margin: 0 20px;
+}
+
+#autresplantes > article:nth-child(3) {
+  background: url(../img/autresplantes/3.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 25%;
+}
+
+@media (max-width: 800px) {
+  #autresplantes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #autresplantes > article:nth-child(1),
+#autresplantes > article:nth-child(2),
+#autresplantes > article:nth-child(3) {
+    margin: 0 0 20px 0;
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+  }
+}
