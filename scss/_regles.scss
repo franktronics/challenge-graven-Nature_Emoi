@@ -39,6 +39,7 @@ ul{
     font-family: 'Abril Fatface';
     font-size: size(40);
     position: relative;
+    margin-bottom: 40px;
 
     &::after{
         content: '';
@@ -50,6 +51,9 @@ ul{
         top: 100%;
         left: 0;
     }
+    @media (max-width: 500px){
+        font-size: size(30);
+    }
 }
 /********/
 
@@ -60,13 +64,8 @@ ul{
     width: 300px;  
     height: 450px;
     position: relative;
-    background: url(../img/mventes/1.jpg);
-    background-size: cover;
 
-    // img{
-    //     width: 100%;
-    //     height: 100%;
-    // }
+
     .cardblock{
         background: #FFFFFFDF;
         position: absolute;

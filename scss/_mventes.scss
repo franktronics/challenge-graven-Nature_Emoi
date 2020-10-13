@@ -4,5 +4,27 @@
     @extend %width-container;
 }
 .bloccard{
-    //display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &>.card{
+        min-width: 250px;
+    }
+}
+.bloccard>div:nth-child(1){
+    background: url(../img/mventes/1.jpg);
+    background-size: cover;
+}
+.bloccard>div:nth-child(2){
+    background: url(../img/mventes/2.jpg);
+    background-size: cover;
+}
+.bloccard>div:nth-child(3){
+    background: url(../img/mventes/3.jpg);
+    background-size: cover;
+}
+.bloccard>div:nth-child(4){
+    background: url(../img/mventes/4.jpg);
+    background-size: cover;
 }
