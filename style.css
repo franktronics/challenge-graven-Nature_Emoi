@@ -59,8 +59,6 @@ ul {
 /********/
 /*regles pour les cards*/
 .card {
-  width: 300px;
-  height: 450px;
   position: relative;
 }
 .card .cardblock {
@@ -323,8 +321,6 @@ ul {
 /********/
 /*regles pour les cards*/
 .card {
-  width: 300px;
-  height: 450px;
   position: relative;
 }
 .card .cardblock {
@@ -458,8 +454,6 @@ ul {
 /********/
 /*regles pour les cards*/
 .card {
-  width: 300px;
-  height: 450px;
   position: relative;
 }
 .card .cardblock {
@@ -495,12 +489,18 @@ ul {
 }
 
 /*regles pour les cards*/
+#mventes {
+  padding-bottom: 180px;
+}
+
 .bloccard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .bloccard > .card {
+  width: 300px;
+  height: 450px;
   min-width: 250px;
 }
 
@@ -524,6 +524,15 @@ ul {
   background-size: cover;
 }
 
+@media (max-width: 696px) {
+  .bloccard .card {
+    margin-bottom: 20px;
+  }
+
+  #mventes {
+    padding-bottom: 100px;
+  }
+}
 /*valeur de la police par default*/
 #nosplantes, #service, #mventes {
   margin-left: calc((100% - 1200px) / 2);
@@ -585,8 +594,161 @@ ul {
 /********/
 /*regles pour les cards*/
 .card {
-  width: 300px;
-  height: 450px;
+  position: relative;
+}
+.card .cardblock {
+  background: #FFFFFFDF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  padding: 15px 20px 0 20px;
+  transition: height ease-in-out 0.3s;
+}
+.card .cardblock div {
+  display: flex;
+  justify-content: space-between;
+}
+.card .text-price {
+  color: #ADD981;
+  font-size: 0.875rem;
+}
+.card .savoirplus {
+  text-align: center;
+  padding-top: 40px;
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
+}
+.card:hover .cardblock {
+  height: 60%;
+}
+.card:hover .savoirplus {
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+/*regles pour les cards*/
+.nosplantes-card-container > article {
+  width: 100%;
+  height: 100%;
+}
+
+.nosplantes-card-container > article:nth-child(1) {
+  background: url(../img/nosplantes/1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nosplantes-card-container > article:nth-child(2) {
+  background: url(../img/nosplantes/2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nosplantes-card-container > article:nth-child(3) {
+  background: url(../img/nosplantes/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nosplantes-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.first-card {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+@media (max-width: 700px) {
+  .nosplantes-card-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 450px);
+    grid-column-gap: 0;
+  }
+
+  .first-card {
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .nosplantes-card-container > article {
+    max-width: 300px;
+    height: 450px;
+    margin: 0 auto;
+  }
+
+  #nosplantes {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+/*valeur de la police par default*/
+#service, #mventes, #nosplantes {
+  margin-left: calc((100% - 1200px) / 2);
+  margin-right: calc((100% - 1200px) / 2);
+}
+@media all and (max-width: 1200px) {
+  #service, #mventes, #nosplantes {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Tahoma;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 16px;
+}
+
+p, a {
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*styles des titres*/
+.textbold {
+  color: #000;
+  font-family: "Abril Fatface";
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 40px;
+}
+.textbold::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  position: absolute;
+  background: #ADD981;
+  top: 100%;
+  left: 0;
+}
+@media (max-width: 500px) {
+  .textbold {
+    font-size: 1.875rem;
+  }
+}
+
+/********/
+/*regles pour les cards*/
+.card {
   position: relative;
 }
 .card .cardblock {

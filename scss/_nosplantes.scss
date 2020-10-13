@@ -3,3 +3,54 @@
 #nosplantes{
     @extend %width-container;
 }
+.nosplantes-card-container>article{
+    width: 100%;
+    height: 100%;
+}
+.nosplantes-card-container>article:nth-child(1){
+    background: url(../img/nosplantes/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nosplantes-card-container>article:nth-child(2){
+    background: url(../img/nosplantes/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nosplantes-card-container>article:nth-child(3){
+    background: url(../img/nosplantes/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nosplantes-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.first-card{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+@media (max-width: 700px){
+    .nosplantes-card-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 450px);
+        grid-column-gap: 0;
+    }
+    .first-card{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .nosplantes-card-container>article{
+        max-width: 300px;
+        height: 450px;
+        margin: 0 auto;
+    }
+    #nosplantes{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
