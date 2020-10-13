@@ -3,3 +3,14 @@
 #footer{
     @extend %width-container;
 }
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 40px;
+
+    a{
+        font-size: size(14);
+        color: #000;
+    }
+}

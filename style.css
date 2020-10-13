@@ -1,10 +1,10 @@
 /*valeur de la police par default*/
-#autresplantes, #nosplantes, #mventes, #service {
+#footer, #autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #autresplantes, #nosplantes, #mventes, #service {
+  #footer, #autresplantes, #nosplantes, #mventes, #service {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -261,12 +261,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#autresplantes, #nosplantes, #mventes, #service {
+#footer, #autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #autresplantes, #nosplantes, #mventes, #service {
+  #footer, #autresplantes, #nosplantes, #mventes, #service {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -394,12 +394,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#autresplantes, #nosplantes, #mventes, #service {
+#footer, #autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #autresplantes, #nosplantes, #mventes, #service {
+  #footer, #autresplantes, #nosplantes, #mventes, #service {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -534,12 +534,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#autresplantes, #nosplantes, #service, #mventes {
+#footer, #autresplantes, #nosplantes, #service, #mventes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #autresplantes, #nosplantes, #service, #mventes {
+  #footer, #autresplantes, #nosplantes, #service, #mventes {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -693,12 +693,12 @@ ul {
   }
 }
 /*valeur de la police par default*/
-#autresplantes, #service, #mventes, #nosplantes {
+#footer, #autresplantes, #service, #mventes, #nosplantes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
 }
 @media all and (max-width: 1200px) {
-  #autresplantes, #service, #mventes, #nosplantes {
+  #footer, #autresplantes, #service, #mventes, #nosplantes {
     margin-left: 40px;
     margin-right: 40px;
   }
@@ -832,4 +832,110 @@ ul {
     max-width: 300px;
     height: 450px;
   }
+}
+/*valeur de la police par default*/
+#footer, #service, #mventes, #nosplantes, #autresplantes {
+  margin-left: calc((100% - 1200px) / 2);
+  margin-right: calc((100% - 1200px) / 2);
+}
+@media all and (max-width: 1200px) {
+  #footer, #service, #mventes, #nosplantes, #autresplantes {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Tahoma;
+}
+
+body, html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 16px;
+}
+
+p, a {
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*styles des titres*/
+.textbold {
+  color: #000;
+  font-family: "Abril Fatface";
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 40px;
+}
+.textbold::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 8px;
+  position: absolute;
+  background: #ADD981;
+  top: 100%;
+  left: 0;
+}
+@media (max-width: 500px) {
+  .textbold {
+    font-size: 1.875rem;
+  }
+}
+
+/********/
+/*regles pour les cards*/
+.card {
+  position: relative;
+}
+.card .cardblock {
+  background: #FFFFFFDF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  padding: 15px 20px 0 20px;
+  transition: height ease-in-out 0.3s;
+}
+.card .cardblock div {
+  display: flex;
+  justify-content: space-between;
+}
+.card .text-price {
+  color: #ADD981;
+  font-size: 0.875rem;
+}
+.card .savoirplus {
+  text-align: center;
+  padding-top: 40px;
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
+}
+.card:hover .cardblock {
+  height: 60%;
+}
+.card:hover .savoirplus {
+  opacity: 1;
+  transform: translateY(20px);
+}
+
+/*regles pour les cards*/
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+.footer-container a {
+  font-size: 0.875rem;
+  color: #000;
 }
