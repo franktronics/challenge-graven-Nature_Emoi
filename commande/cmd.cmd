@@ -1,0 +1,1 @@
+./dart-sass/sass ../scss/style.scss ../css/style.css --watch --no-source-map

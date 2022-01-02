@@ -11,6 +11,13 @@
 
     a{
         font-size: size(14);
-        color: #000;
+    }
+    @media (max-width: 660px){
+        flex-direction: column;
+        justify-content: flex-start;
+
+        a{
+            padding-bottom: 10px;
+        }
     }
 }

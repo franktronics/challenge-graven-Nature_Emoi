@@ -1,4 +1,3 @@
-/*valeur de la police par default*/
 #footer, #autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
@@ -26,6 +25,10 @@ body, html {
 p, a {
   font-size: 1.125rem;
   text-decoration: none;
+}
+
+section a, footer a {
+  color: #000;
 }
 
 ul {
@@ -62,7 +65,8 @@ ul {
   position: relative;
 }
 .card .cardblock {
-  background: #FFFFFFDF;
+  background: rgba(255, 255, 255, 0.875);
+  /*#ffffffdf*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -81,7 +85,7 @@ ul {
 }
 .card .savoirplus {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   opacity: 0;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
 }
@@ -260,7 +264,6 @@ ul {
     margin-left: calc(100% - 100px);
   }
 }
-/*valeur de la police par default*/
 #footer, #autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
@@ -288,6 +291,10 @@ body, html {
 p, a {
   font-size: 1.125rem;
   text-decoration: none;
+}
+
+section a, footer a {
+  color: #000;
 }
 
 ul {
@@ -324,7 +331,8 @@ ul {
   position: relative;
 }
 .card .cardblock {
-  background: #FFFFFFDF;
+  background: rgba(255, 255, 255, 0.875);
+  /*#ffffffdf*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -343,7 +351,7 @@ ul {
 }
 .card .savoirplus {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   opacity: 0;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
 }
@@ -393,7 +401,6 @@ ul {
     font-size: 60px;
   }
 }
-/*valeur de la police par default*/
 #footer, #autresplantes, #nosplantes, #mventes, #service {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
@@ -423,6 +430,10 @@ p, a {
   text-decoration: none;
 }
 
+section a, footer a {
+  color: #000;
+}
+
 ul {
   list-style-type: none;
 }
@@ -457,7 +468,8 @@ ul {
   position: relative;
 }
 .card .cardblock {
-  background: #FFFFFFDF;
+  background: rgba(255, 255, 255, 0.875);
+  /*#ffffffdf*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -476,7 +488,7 @@ ul {
 }
 .card .savoirplus {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   opacity: 0;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
 }
@@ -504,22 +516,22 @@ ul {
   min-width: 250px;
 }
 
-.bloccard > div:nth-child(1) {
+.bloccard > a:nth-child(1) {
   background: url(../img/mventes/1.jpg);
   background-size: cover;
 }
 
-.bloccard > div:nth-child(2) {
+.bloccard > a:nth-child(2) {
   background: url(../img/mventes/2.jpg);
   background-size: cover;
 }
 
-.bloccard > div:nth-child(3) {
+.bloccard > a:nth-child(3) {
   background: url(../img/mventes/3.jpg);
   background-size: cover;
 }
 
-.bloccard > div:nth-child(4) {
+.bloccard > a:nth-child(4) {
   background: url(../img/mventes/4.jpg);
   background-size: cover;
 }
@@ -533,7 +545,6 @@ ul {
     padding-bottom: 100px;
   }
 }
-/*valeur de la police par default*/
 #footer, #autresplantes, #nosplantes, #service, #mventes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
@@ -563,6 +574,10 @@ p, a {
   text-decoration: none;
 }
 
+section a, footer a {
+  color: #000;
+}
+
 ul {
   list-style-type: none;
 }
@@ -597,7 +612,8 @@ ul {
   position: relative;
 }
 .card .cardblock {
-  background: #FFFFFFDF;
+  background: rgba(255, 255, 255, 0.875);
+  /*#ffffffdf*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -616,7 +632,7 @@ ul {
 }
 .card .savoirplus {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   opacity: 0;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
 }
@@ -633,24 +649,24 @@ ul {
   padding-bottom: 20px;
 }
 
-.nosplantes-card-container > article {
+.nosplantes-card-container > a {
   width: 100%;
   height: 100%;
 }
 
-.nosplantes-card-container > article:nth-child(1) {
+.nosplantes-card-container > a:nth-child(1) {
   background: url(../img/nosplantes/1.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.nosplantes-card-container > article:nth-child(2) {
+.nosplantes-card-container > a:nth-child(2) {
   background: url(../img/nosplantes/2.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.nosplantes-card-container > article:nth-child(3) {
+.nosplantes-card-container > a:nth-child(3) {
   background: url(../img/nosplantes/3.jpg);
   background-size: cover;
   background-position: center;
@@ -681,7 +697,7 @@ ul {
     grid-row-end: 1;
   }
 
-  .nosplantes-card-container > article {
+  .nosplantes-card-container > a {
     max-width: 300px;
     height: 450px;
     margin: 0 auto;
@@ -692,7 +708,6 @@ ul {
     margin-right: 40px;
   }
 }
-/*valeur de la police par default*/
 #footer, #autresplantes, #service, #mventes, #nosplantes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
@@ -722,6 +737,10 @@ p, a {
   text-decoration: none;
 }
 
+section a, footer a {
+  color: #000;
+}
+
 ul {
   list-style-type: none;
 }
@@ -756,7 +775,8 @@ ul {
   position: relative;
 }
 .card .cardblock {
-  background: #FFFFFFDF;
+  background: rgba(255, 255, 255, 0.875);
+  /*#ffffffdf*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -775,7 +795,7 @@ ul {
 }
 .card .savoirplus {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   opacity: 0;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
 }
@@ -792,18 +812,18 @@ ul {
   display: flex;
 }
 
-#autresplantes > article {
+#autresplantes > a {
   height: 600px;
 }
 
-#autresplantes > article:nth-child(1) {
+#autresplantes > a:nth-child(1) {
   background: url(../img/autresplantes/1.jpg);
   background-size: cover;
   background-position: center;
   width: 25%;
 }
 
-#autresplantes > article:nth-child(2) {
+#autresplantes > a:nth-child(2) {
   background: url(../img/autresplantes/2.jpg);
   background-size: cover;
   background-position: center;
@@ -811,7 +831,7 @@ ul {
   margin: 0 20px;
 }
 
-#autresplantes > article:nth-child(3) {
+#autresplantes > a:nth-child(3) {
   background: url(../img/autresplantes/3.jpg);
   background-size: cover;
   background-position: center;
@@ -824,16 +844,15 @@ ul {
     align-items: center;
   }
 
-  #autresplantes > article:nth-child(1),
-#autresplantes > article:nth-child(2),
-#autresplantes > article:nth-child(3) {
+  #autresplantes > a:nth-child(1),
+#autresplantes > a:nth-child(2),
+#autresplantes > a:nth-child(3) {
     margin: 0 0 20px 0;
     width: 100%;
     max-width: 300px;
     height: 450px;
   }
 }
-/*valeur de la police par default*/
 #footer, #service, #mventes, #nosplantes, #autresplantes {
   margin-left: calc((100% - 1200px) / 2);
   margin-right: calc((100% - 1200px) / 2);
@@ -863,6 +882,10 @@ p, a {
   text-decoration: none;
 }
 
+section a, footer a {
+  color: #000;
+}
+
 ul {
   list-style-type: none;
 }
@@ -897,7 +920,8 @@ ul {
   position: relative;
 }
 .card .cardblock {
-  background: #FFFFFFDF;
+  background: rgba(255, 255, 255, 0.875);
+  /*#ffffffdf*/
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -916,7 +940,7 @@ ul {
 }
 .card .savoirplus {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   opacity: 0;
   transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s 0.2s;
 }
@@ -937,5 +961,13 @@ ul {
 }
 .footer-container a {
   font-size: 0.875rem;
-  color: #000;
+}
+@media (max-width: 660px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer-container a {
+    padding-bottom: 10px;
+  }
 }
